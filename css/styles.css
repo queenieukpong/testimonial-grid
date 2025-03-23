@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    background-color: white; /*  Keeps the overall page background white */
+}
+
+/* Container for Testimonials */
+.testimonial-container {
+    background-color: #EDF2F8; /* Correct background color */
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 1100px;
+}
+
+/* Define Grid Layout */
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto;
+    gap: 20px;
+    grid-template-areas: 
+        "purple purple blue kira"
+        "white dark dark kira";
+}
+
+/* Testimonial Card Styles */
+.testimonial {
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.testimonial:hover {
+    transform: translateY(-5px);
+}
+
+/* Assign Grid Areas */
+.purple { 
+    background-color: #733fc8; 
+    grid-area: purple;
+    color: white;
+    background-image: url("/images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: top right 20px;
+}
+
+.dark-blue { 
+    background-color: #49556b; 
+    grid-area: blue;
+    color: white;
+}
+
+.light { 
+    background-color: white; 
+    color: #525764;
+    grid-area: white;
+}
+
+.dark { 
+    background-color: #19212e; 
+    grid-area: dark;
+    color: white;
+}
+
+/* Kira's Card (Spans Entire Right Column) */
+.kira { 
+    background-color: white; 
+    color: #525764;
+    grid-area: kira;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Profile Section */
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.profile h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.verified {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Text Styling */
+.highlight {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+/* Responsiveness */
+
+@media (max-width: 1024px) {
+    .testimonial-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "purple purple"
+            "blue kira"
+            "white dark"
+            "dark dark";
+    }
+}
+
+/* **Mobile Layout (Max Width: 768px)** */
+@media (max-width: 768px) {
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "purple"
+            "blue"
+            "kira"
+            "white"
+            "dark";
+    }
+}
