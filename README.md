@@ -136,5 +136,5 @@ Below is an Image of Progress this far
 
 ### Useful resources
 
-- [Example resource 1](https://www.w3schools.com/css/) - This helped me for when i needed more clarity on css Grid column. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.herosworld.org) - This is an amazing article which helped me finally understand CSS Grid. I'd recommend it to anyone still learning fullstack and needs to grab important concepts in front end HTML and CSS.
+- [w3Schools](https://www.w3schools.com/css/) - This helped me for when i needed more clarity on css Grid column. I really liked this pattern and will use it going forward.
+- [Heros World](https://www.herosworld.org) - This is an amazing article which helped me finally understand CSS Grid. I'd recommend it to anyone still learning fullstack and needs to grab important concepts in front end HTML and CSS.
