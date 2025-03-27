@@ -53,7 +53,7 @@ body {
     background-color: #733fc8; 
     grid-area: purple;
     color: white;
-    background-image: url("images/bg-pattern-quotation.svg");
+    background-image: url("../images/bg-pattern-quotation.svg");
     background-repeat: no-repeat;
     background-size: 100px;
     background-position: top right 20px;
